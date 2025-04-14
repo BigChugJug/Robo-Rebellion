@@ -8676,6 +8676,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145093315}
+  - component: {fileID: 1145093317}
+  - component: {fileID: 1145093316}
   m_Layer: 0
   m_Name: Gun Emptry Parent
   m_TagString: Untagged
@@ -8692,13 +8694,43 @@ Transform:
   m_GameObject: {fileID: 1145093314}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0314, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1226205883}
   m_Father: {fileID: 272365451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1145093316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145093314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":244.0001,"y":1032.897},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"1d01b2df-9171-4a6c-b43f-46c386977ba8","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"4f6561ec-3171-4bb2-b6d0-9272721adbf6","$version":"A","$type":"Unity.VisualScripting.Update"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!114 &1145093317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145093314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &1145905442
 GameObject:
   m_ObjectHideFlags: 0
@@ -9668,7 +9700,7 @@ Transform:
   m_GameObject: {fileID: 1226205879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.234, y: -2.553, z: 0}
   m_LocalScale: {x: 0.24575, y: 0.044235002, z: 0.0646642}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13491,7 +13523,7 @@ Transform:
   m_GameObject: {fileID: 1892410599}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.32299995, y: -0.006000042, z: -0.0769999}
+  m_LocalPosition: {x: 2.5570002, y: -2.559, z: -0.0769999}
   m_LocalScale: {x: 0.08171676, y: 0.08171676, z: 0.08171676}
   m_ConstrainProportionsScale: 0
   m_Children: []
