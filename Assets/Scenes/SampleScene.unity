@@ -13721,7 +13721,6 @@ GameObject:
   - component: {fileID: 1892410602}
   - component: {fileID: 1892410601}
   - component: {fileID: 1892410605}
-  - component: {fileID: 1892410604}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -13818,22 +13817,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892410599}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1892410604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892410599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 3be3dd0454c9ab64da4f8ac595bd0178, type: 2}
 --- !u!114 &1892410605
 MonoBehaviour:
   m_ObjectHideFlags: 0
