@@ -1,0 +1,201 @@
+Changelog 1.006.01w Thomas the Quit engine
+All aboard!!! The train prefab has arrived for  you to ride on top of, it can move front and backwards, additional carts have not been implemented, and you will need to create a spline for it to ride on. (spline package not included)
+We have a quit button, for when I am done with the slums first jump. 
+Corrected UI bug where it did not update when gaining health, but health was properly applied.
+
+Josh: Added turret enemy Bullet prefab
+Cayley: added pickups to apartment level
+MichaelB: RoofTop 2.6
+Xkyax: Fence 3
+JMP26 Updated Slums
+Justin: Update to market and Junkyard, and Turrets
+Robert: Added more sfx, including possible explosions for pylons
+
+
+Changelog 1.005.01: Big Chungus
+Our Hero might be bodyless but that does not mean its physics can't be revamped, new and improved collisions to avoid exploits where bullets did not hit at certain angles and distance, corrected crouching speed bug, now sprinting is lost once the player stops moving. 
+Revamped the weapon system, so our hero now spawns with just a pistol and each weapon can be unlocked or locked, has ammo and had damage tweaked.
+Added Pick up system, with prefabs for regaining ammo, recovering health, and unlocking weapons and more.
+Respawning players after death or at new levels lose all unlocked weapons. This can be fixed in another update,but bear in mind losing everything on death and very limited ammo can prove to be very fun, with situations where the player has to keep moving to get new ammo or health, makes death meaningful and progress tough.
+
+Josh: Added SFX to weapons
+JMP26 updated slums
+xKyax did not make a merge branch this week, did a fence
+noah made more changes to level
+Justin replaced market map file, updated junkyar, fixed fence and finished it
+
+
+
+Changelog 1.004.01
+Fixed Checkpoint system, deleted player objects on each level, fixed checkpoint placement on most levels
+Cayley: adjusted start and end points before build, created temporary checkpoint mesh, apartment level changes
+Justin: Market Update, New Materials, updated slums
+Noah: More Remapping!!
+Josh: Added Pylon visual Graph, hopefully fixed pylon
+Michael B: Rooftop 2.3
+
+Ver 1.003.03w
+Fixed Bugs, corrected materials misplacement, added FX for bullets and gunshots, fixed misplaced Skyboxes
+Michael: Rooftop 2.2
+Stemano: Changes from last clas
+xKyax: Covers Added/ Branch Merge
+Noah: Changes to map
+Cayley: band-aids for build, Wishlist Changes
+added player prefabs so that levels would be playable
+moved player start and checkpoints
+Justin: Junkyard Update, Market Update, AI update, Post Process on all Cams, Added Skybox
+
+Changelog:
+Ver 1.003.02
+Fixed Bullet Collision Behavior
+Fixed Machine Gun spread
+Fixed Shotgun Spread Bug
+Fixed Drone Respawn Behavior on Reload
+Cayley: moved player start on all levels
+ensured start to finish on each map
+Justin: JunkYard Ai Update
+
+Changelog:
+Ver 1.003.01 Build Ready!
+Drone ready to rain down hell!! portraying a new chasis, gravity based elevation for smooth moving, Double turretheads for double the trouble!! also minor fixes to bullet logic, mob collisions and checkpoint system.
+
+Robert: Added BasemeshPlaceholder, Added Basemesh FBX under Meshes/Enemies
+Added Animation Controller to Scripts/Enemy/Animation
+Set up basic state machines for aiming with one handed and 2 handed weapon
+Still needs variables for Ground Velocity, Vertical Aim, and Weight adjustment based on weapon type
+Cayley: Apartment Level Changes
+MichaelB: Rooftop 2.0 full rebuild
+Xkyax: Marketplace
+Noah: Enemies and Navmesh
+Justin: Junkyard updates
+
+
+Changelog:
+Ver 1.002.02w
+All mobs now can collide with things, added rotating objects and moving objects, work similarly to their platform counterparts they just dont make you stick to them.
+Justin: made new prefabs and updated junkyard arena
+Hector Ruiz, Design
+Jan: Added enemy and new Big Buildings, merge branch
+JMP26: Updated Slums Level
+Noah: changes to level
+MichaelB Rooftop Part1.4 1.5 
+cayley: expanded apartment level, game manager and checkpoint stuff, added game manager and checkpoint to slums and marketplace
+
+Changelog:
+Ver 1.002.02
+Finally we have Checkpoints, these checkpoints will work also as start level, there is a checkpoint sytem prefab that must go in each level's starting point, you need to the second one in order to work, also each level has to have the game manager prefab or the game WILL break. Check the Sample Scene onto see how it works. player progression is set up to be added later
+Justin Junkjard update
+MichaelB - Rooftop 1.3
+apartment level changes
+added bugs and wishlist into scenes folder
+xKyax did a Merge branch 'main' of https://github.com/RichlandCollegeGaming/ProjectS…
+Noah Made more changes to level
+Jan - more big buildings
+JMP26 Updated slums level
+xKyax did a Merge branch 'main' of https://github.com/RichlandCollegeGaming/ProjectS…
+
+Changelog:
+Ver 1.002.01W
+Made changes under the hood, created prefabs for checkpoints ands Interactors, created spawner class, Set up GameManager to collect player info, but Checkpoints will work until next update.
+MichaelB added Rooftop part 1.2
+JMP26 Updated slums level
+Justin Added terrain and updated it.
+Cayley 
+added death volumes and end points where needed
+fixed death volume and ending screen
+Noah
+Placed death volumes in my map were I wanted them.
+Added more details to level
+
+
+Changelog:
+Ver 0.001.03w
+New DeathScreen UI, ui canvas and event manager, all neatly and conveniently packed in the UIContainer Prefab drag and drop and you can die happily knowing you can restart again
+Speaking of death, we now have a new Deadly area prefab that can go below the scene so you can avoid an eternity of torment falling into an endless void, also you can create traps with it....
+PlayerController now calls the UI so it can peacefully pass away....
+
+Justin: Updated Junkjard, added terrain, quick fixes
+Noah: Made more changes
+MichaelB- Snipping rooftops, gearing for enemies, added Sniper turrets and sniper bullets
+Xkyax: Added new buildings by branch merge
+JMP26: Updated Slums
+BigChughJug: Updated Junkjard and arena
+SKyax: Started working in FPS marketplace level, and did a Branch Merge
+Cayley
+-set the build settings to final levels
+-fixed player weapons on player character
+-added player character to all final levels
+-added game manager to all final levels
+-small changes to rooftop level hierarchy and mesh materials
+-added nav mesh to rooftop level
+******************************************************************************************************************
+Changelog:
+Ver 0.001.03
+Added trapdoor platforms,  they can stay, delay or drop below your feet.
+Added shotgun, and machine gun, free to use for a limited time. What is not limited is the ammo!!
+Modified triggers, toggle one time use to make themselves self delete, or wait till you can trigger them again, so be patient.
+Modified Interacted class so they can know when to do it all over again, make you wait or simply do it all over again.
+Caley:
+added navmesh to caley scene
+Noah Carrasco: further updates to level
+JMP26: updated slums level
+Caley:
+moved justin test 2 scene and renamed it to junkyard
+created marketplace scene
+changes to apartments scene
+Justin T: updated junkyard and added prefab
+MichaelB: Rooftop part1
+JMP26: Moved Slums Level
+MichaelB: Rename Map redoing blockout
+Noah Carrasco: Changed setting for the player for everyone. this will be the standard for the player movement.
+Jan: Small changes
+Caley 
+added official maps folders for all 6 levels
+created buildings scene
+made changes to cayley scene
+changes names of colors
+Justin T updated Junkyard
+*******************************************************************************************************************
+Ver 0.001.02w
+Added Rotating Platforms, now with new and improved area check mechanic that enables parenting on intersecting trigger colliders, added Scene System and temporary scene ender, added title and intro screens with canvas and buttons
+Noah started my level block out
+Caylay updated cayley scene
+Justin UpdatedJunkyard
+Jan merged branch and Added few Shacks
+JMP26 Slums
+Michael Added CybercityBlockout
+**************************************************************************************************************************
+Ver 0.001.02
+Added Interactable scripts, trigger, door and platform prefabs, modified player object for platform to work, Interactable class and trigger object can work with multiple prefabs for things to work simultaneously, allowing complex event interactions.
+Created Changelog file.
+xKyax: Merged branch
+Jan: Marketplace level
+JMP26: Created the first idea of the slums level.
+MichaelB: test map and intialize blockout map
+Cayley: changes to yellow texture changes to cayley scene
+added textures to blockout prefabs, changed level of blockout prefabs to ground, made new materials for prefabs.
+
+*************************************************************************************************************************
+Ver 0.001.01w
+Mobs are no longer afraid of heights and decide quit to origin.
+Turrets are online
+Prototyping prefabs added by josh
+iconfiles added by Cedric
+*************************************************************************************************************************
+Ver 0.001.01
+created enemy class, parent of walking enemy class.
+created the interface Iattack
+they are used on the newly created sentry enemy prefab.
+
+created damageable class, killable class
+both work together in the damagecore and simpledestroyer, so you can damage a part and once destroyed, it destroys the object that it is attached to.
+
+added GameManager object. this is not a prefab, but it contains the script that can hide the mouse element.
+
+added basic URP material red, it can be copied and changed so everything can have colors now
+new folder structure, now with more recursiveness.
+d71dd82
+Assets\Materials\Temporary.meta
+
+
+
