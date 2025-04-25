@@ -1,0 +1,10 @@
+# ninja log v5
+17	515	7673090361156252	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	fc3a93ca290448f2
+30	585	7673090361257044	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	be72f8a54f82b742
+44	633	7673090361458765	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	90dbcf83c93a6f32
+37	634	7673090361846456	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	bec425f76e16b376
+11	635	7673090362137927	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	71dc9319869bd3e
+6	659	7673090361297255	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	7a1d21ef144c5ce8
+24	736	7673090363189613	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	27a73904f09853b5
+1	791	7673090363877982	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	6f37091399a3036f
+791	895	7673090364886801	C:/Users/Jthom/Robo Rebellion/Robo-Rebellion/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5d1o6ns1/obj/arm64-v8a/libgame.so	f0c3ff2f74b31c

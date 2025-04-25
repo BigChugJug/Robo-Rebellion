@@ -46,12 +46,12 @@ public class DroneEnemy : Enemy, IAttack
                 if (droneBody !=null)
                 {
                     // Use a lerp on the force to slowly change it
-                    float dampedForce = Mathf.Lerp(droneBody.velocity.y, force, damping * Time.fixedDeltaTime);
+                    float dampedForce = Mathf.Lerp(droneBody.linearVelocity.y, force, damping * Time.fixedDeltaTime);
 
                     //check current velocity
-                    Vector3 velocity = droneBody.velocity;
+                    Vector3 velocity = droneBody.linearVelocity;
                     velocity.y = Mathf.Clamp(dampedForce, -maxSpeed, maxSpeed);
-                    droneBody.velocity = velocity;
+                    droneBody.linearVelocity = velocity;
                 }
               
 
@@ -66,12 +66,12 @@ public class DroneEnemy : Enemy, IAttack
                 float hoverForce = hoverDifference * liftForce;
 
                 // Apply damping to smooth the hovering
-                float dampedHoverForce = Mathf.Lerp(droneBody.velocity.y, hoverForce, damping * Time.fixedDeltaTime);
+                float dampedHoverForce = Mathf.Lerp(droneBody.linearVelocity.y, hoverForce, damping * Time.fixedDeltaTime);
 
                 // Adjust velocity to maintain altitude
-                Vector3 velocity = droneBody.velocity;
+                Vector3 velocity = droneBody.linearVelocity;
                 velocity.y = Mathf.Clamp(dampedHoverForce, -maxSpeed, maxSpeed);
-                droneBody.velocity = velocity;
+                droneBody.linearVelocity = velocity;
 
             
             }
@@ -160,13 +160,13 @@ public class DroneEnemy : Enemy, IAttack
         {
             Vector3 moveDirection = (target.position - transform.position).normalized;
             moveDirection.y = 0;
-            droneBody.velocity = new Vector3(moveDirection.x * moveSpeed, droneBody.velocity.y, moveDirection.z * moveSpeed);
+            droneBody.linearVelocity = new Vector3(moveDirection.x * moveSpeed, droneBody.linearVelocity.y, moveDirection.z * moveSpeed);
 
         }
 
         else
         {
-            droneBody.velocity = new Vector3(0, droneBody.velocity.y, 0);
+            droneBody.linearVelocity = new Vector3(0, droneBody.linearVelocity.y, 0);
         }
 
         
